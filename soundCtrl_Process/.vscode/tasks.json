@@ -1,0 +1,149 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build viewer Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/viewerModule/build"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the viewer module"
+        },
+        {
+            "label": "Run viewer Module",
+            "type": "shell",
+            "command": "${workspaceFolder}/viewerModule/build/ViewerModule",
+            "group": {
+                "kind": "build",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build launcher Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/launcherModule/build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the launcher module"
+        },
+        {
+            "label": "Run launcher Module",
+            "type": "shell",
+            "command": "${workspaceFolder}/launcherModule/build/LauncherModule",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build modulationModule Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/modulationModule/build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the process module"
+        },
+        {
+            "label": "Run modulationModule Module",
+            "type": "shell",
+            "command": "${workspaceFolder}/modulationModule/build/modulationModule",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build output Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/outputModule/build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the output module"
+        },
+        {
+            "label": "Run output Module",
+            "type": "shell",
+            "command": "${workspaceFolder}/outputModule/build/OutputModule",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build input Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/inputModule/build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the input module"
+        },
+        {
+            "label": "Run input Module",
+            "type": "shell",
+            "command": "${workspaceFolder}/inputModule/build/InputModule",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build output Module",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/outputModule/build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the input module"
+        },
+        {
+            "label": "Build All Module",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "${workspaceFolder}/build_all.sh"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building the input module"
+        },
+    ]
+}
